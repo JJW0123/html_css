@@ -1,17 +1,77 @@
 <!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div>
-        <div>
-            <div>
-                00123
-            </div>
-        </div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GDWEB-CLONE</title>
+    <!-- CSS 링크 주입 -->
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <!-- 배너 영역 -->
+    <div class="banner">
+      <img src="./public/images/banner.jpg" alt="@banner" class="banner__img" />
     </div>
-</body>
+    <!-- 헤더 영역 -->
+    <header class="header">
+      <div class="header__main">
+        <!-- 로고 영역 -->
+        <div class="header__main__logo">
+          <img src="./public/images/logo.png" alt="@logo" class="img" />
+        </div>
+        <!-- 검색창 영역 -->
+        <div class="header__main__search">
+          <input type="text" />
+          <button>검색</button>
+        </div>
+      </div>
+      <!-- 회원가입, 로그인 버튼 박스 영역 -->
+      <div class="header__login">
+        <a href="">로그인</a>
+      </div>
+    </header>
+    <!-- 네비게이션 영역 -->
+    <nav class="nav">
+      <a href="">AWARDS 안내</a>
+      <a href="">2025 수상작</a>
+      <a href="">수상 안내</a>
+      <a href="">문의하기</a>
+      <a href="">심사등록</a>
+      <a href="">디지털에이전시검색</a>
+      <a href="">디지털에이전시순위정보</a>
+    </nav>
+    <main class="main">
+      <!-- 수상 관련기사 및 에이전시 순위 조회 영역 -->
+      <div class="main__chart">
+        <!-- 수상관련기사 영역 -->
+        <div class="main__chart__section">
+          <!-- 라벨 영역 -->
+          <div class="label">수상 관련 기사</div>
+          <!-- 콘텐츠 영역 -->
+          <div class="contents">
+            <!-- 실 정보 영역 -->
+            <p class="contents__title">
+              수상 관련기사 및 에이전시 순위 조회 01
+            </p>
+            <!-- 버튼 영역 -->
+            <button class="contents__btn">전체보기 +</button>
+          </div>
+        </div>
+        <!-- 에이전시순위 영역 -->
+        <div class="main__chart__section">
+          <!-- 라벨 영역 -->
+          <div class="label">에이전시순위</div>
+          <!-- 콘텐츠 영역 -->
+          <div class="contents">
+            <!-- 실 정보 영역 -->
+            <p class="contents__title">
+              수상 관련기사 및 에이전시 순위 조회 02
+            </p>
+            <!-- 버튼 영역 -->
+            <button class="contents__btn">순위전체보기 +</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
